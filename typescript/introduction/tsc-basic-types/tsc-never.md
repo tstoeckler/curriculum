@@ -35,7 +35,7 @@ function throwError(
   throw new Error(message);
 }
 
-function impossibleValue(value) {
+function impossibleValue(value): never {
   if (
     typeof value === "string" &&
     typeof value === "number"
